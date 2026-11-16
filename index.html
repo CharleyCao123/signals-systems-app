@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="信号与系统互动学习工具：详细知识点讲解、例题精析与动态图形实验（卷积、傅里叶、抽样、极点响应等）">
+<title>信号与系统学习工具</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="topbar">
+  <button id="btnSidebar" class="icon-btn" aria-label="打开目录">☰</button>
+  <a class="brand" href="#/pre"><span class="brand-mark">∫</span><span class="brand-text">信号与系统学习工具</span></a>
+  <div class="search-box">
+    <input id="searchInput" type="text" placeholder="搜索章节或知识点…" autocomplete="off">
+    <div id="searchResults" class="search-results" hidden></div>
+  </div>
+  <div class="topbar-actions">
+    <button id="btnQuiz" class="icon-btn quiz-btn" title="章节自测">✎ 自测</button>
+    <button id="btnFontMinus" class="icon-btn" title="减小字号">A−</button>
+    <button id="btnFontPlus" class="icon-btn" title="增大字号">A＋</button>
+    <button id="btnTheme" class="icon-btn" title="切换明暗主题">🌙</button>
+  </div>
+</header>
+
+<div class="layout">
+  <aside id="sidebar" class="sidebar">
+    <div class="side-meta">
+      <div class="side-title">知识点精讲 · 动态图形实验</div>
+      <div class="side-progress">
+        <div class="side-progress-text"><span id="progressNum">0</span>% 已读</div>
+        <div class="side-progress-track"><div id="progressBar"></div></div>
+      </div>
+    </div>
+    <nav id="navTree" class="nav-tree" aria-label="章节目录"></nav>
+    <div class="side-footer">配套《信号与系统知识汇编》文档</div>
+  </aside>
+  <div id="backdrop" class="backdrop"></div>
+
+  <main id="main" class="main">
+    <article id="article" class="article"></article>
+    <nav id="chapterNav" class="chapter-nav"></nav>
+  </main>
+</div>
+
+<div id="quizView" class="quiz-view" hidden>
+  <div class="quiz-shell" id="quizShell"></div>
+</div>
+
+<script src="js/content1.js"></script>
+<script src="js/content2.js"></script>
+<script src="js/content3.js"></script>
+<script src="js/content4.js"></script>
+<script src="js/sim-core.js"></script>
+<script src="js/sims-a.js"></script>
+<script src="js/sims-b.js"></script>
+<script src="js/sims-c.js"></script>
+<script src="js/quiz-data.js"></script>
+<script src="js/quiz.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
